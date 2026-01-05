@@ -12,14 +12,26 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 01de5f2ca4aea9046a0e19ea1da68870
   - enabled: 1
+    path: Assets/Scenes/IntroCutscene.unity
+    guid: 23defeb0ff74736499264edec38dda67
+  - enabled: 1
     path: Assets/Scenes/Game.unity
-    guid: 9b94c760b40f94a469206f6e041c8e6d
+    guid: e437cc58741340b4aac156687453f5f9
+  - enabled: 1
+    path: Assets/Scenes/JourneyCutscene.unity
+    guid: 3d09cc7cdba631042b8ded8c349e4c58
   - enabled: 1
     path: Assets/Scenes/Fourlane.unity
     guid: f970ea75935d3144fa79e4899a9fac0c
   - enabled: 1
+    path: Assets/Scenes/ACT2Cutscene.unity
+    guid: 6324422a9ef03e246972d38aa08796fc
+  - enabled: 1
     path: Assets/Scenes/Jungle.unity
     guid: 9de04d6611a32304e9bdf1530dbb5e3f
+  - enabled: 1
+    path: Assets/Scenes/SpiritCutscene.unity
+    guid: d005dd7a705fb8746b58dfee98d98d01
   - enabled: 1
     path: Assets/Scenes/Junglemaster.unity
     guid: 59beaef8b6034ec44a5c090f6b8d407e

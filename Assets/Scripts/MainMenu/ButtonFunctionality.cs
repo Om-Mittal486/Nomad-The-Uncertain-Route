@@ -41,7 +41,7 @@ public class MenuAction : MonoBehaviour
         switch (gameObject.name)
         {
             case "Play":
-                SceneManager.LoadScene("Game");
+                SceneManager.LoadScene("IntroCutscene");
                 break;
 
             case "Option":

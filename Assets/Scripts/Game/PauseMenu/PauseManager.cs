@@ -4,6 +4,7 @@ public class PauseMenu : MonoBehaviour
 {
     [Header("Pause Menu")]
     public GameObject pauseMenuCanvas;
+    public GameObject controlsMenuCanvas;
 
     [Header("Sound")]
     public AudioSource audioSource;
@@ -14,6 +15,9 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         pauseMenuCanvas.SetActive(false);
+        if (controlsMenuCanvas != null)
+            controlsMenuCanvas.SetActive(false);
+
         ResumeGame(); // ensure normal state on start
     }
 
@@ -25,6 +29,14 @@ public class PauseMenu : MonoBehaviour
             if (audioSource && escPressSound)
                 audioSource.PlayOneShot(escPressSound);
 
+            // 🔙 If controls menu is open, close it
+            if (controlsMenuCanvas != null && controlsMenuCanvas.activeSelf)
+            {
+                CloseControls();
+                return;
+            }
+
+            // ⏸ Normal pause toggle
             if (isPaused)
                 ResumeGame();
             else
@@ -35,10 +47,12 @@ public class PauseMenu : MonoBehaviour
     void PauseGame()
     {
         pauseMenuCanvas.SetActive(true);
+        if (controlsMenuCanvas != null)
+            controlsMenuCanvas.SetActive(false);
+
         Time.timeScale = 0f;
         isPaused = true;
 
-        // Cursor
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
@@ -46,15 +60,33 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame()
     {
         pauseMenuCanvas.SetActive(false);
+        if (controlsMenuCanvas != null)
+            controlsMenuCanvas.SetActive(false);
+
         Time.timeScale = 1f;
         isPaused = false;
 
-        // Cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
-    // Optional: Call this from a Quit button
+    // 🎮 Called by Controls button
+    public void OpenControls()
+    {
+        pauseMenuCanvas.SetActive(false);
+        if (controlsMenuCanvas != null)
+            controlsMenuCanvas.SetActive(true);
+    }
+
+    // 🔙 Close Controls (ESC)
+    void CloseControls()
+    {
+        if (controlsMenuCanvas != null)
+            controlsMenuCanvas.SetActive(false);
+
+        pauseMenuCanvas.SetActive(true);
+    }
+
     public void QuitGame()
     {
         Time.timeScale = 1f;
