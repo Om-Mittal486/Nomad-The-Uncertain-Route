@@ -3422,6 +3422,7 @@ GameObject:
   - component: {fileID: 1497035624}
   - component: {fileID: 1497035626}
   - component: {fileID: 1497035625}
+  - component: {fileID: 1497035627}
   m_Layer: 0
   m_Name: Jungle
   m_TagString: Untagged
@@ -3549,6 +3550,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1497035627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497035623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f97e1f333b49bfd4d92656312308cd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneLoadTrigger
+  sceneName: Jungle
+  playerTag: Player
 --- !u!1 &1530279228
 GameObject:
   m_ObjectHideFlags: 0
@@ -4920,6 +4935,7 @@ GameObject:
   - component: {fileID: 2049579622}
   - component: {fileID: 2049579624}
   - component: {fileID: 2049579623}
+  - component: {fileID: 2049579625}
   m_Layer: 0
   m_Name: Dessert
   m_TagString: Untagged
@@ -5047,6 +5063,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2049579625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049579621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f97e1f333b49bfd4d92656312308cd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneLoadTrigger
+  sceneName: Dessert
+  playerTag: Player
 --- !u!1 &2073589525
 GameObject:
   m_ObjectHideFlags: 0
