@@ -3000,7 +3000,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: d326656cf626dec429f42d4dc27e853a, type: 3}
+  m_Texture: {fileID: 2800000, guid: cf24bcef33c69a24d911afb478b30804, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -5351,7 +5351,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Objective : Be Patient and choose the correct turn.'
+  m_text: 'Objective : Talk to Spirit'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: df430c0ffd28d4e4a959c0dcd68fe748, type: 2}
   m_sharedMaterial: {fileID: -1088948170032876427, guid: df430c0ffd28d4e4a959c0dcd68fe748, type: 2}
@@ -5378,8 +5378,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 85
+  m_fontSizeBase: 85
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
