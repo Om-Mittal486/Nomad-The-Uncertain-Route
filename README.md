@@ -3,8 +3,6 @@
 > **Theme:** Caravans and Crossroads  
 > **Developed during:** Jaipur Game Jam (24 Hrs)
 
-ILLegal Move is a 2D platformer game developed for the StarCade Game Jam. The game challenges players to rethink traditional gameplay rules.
-
 ## About the Game
 
 Nomad - The Uncertain Route is a Top-Down 2D RPG developed during the Jaipur Game Jam, where our main character is on a journey to get some items. Each item brings new challenges and our player has to face that challenge in order to get that item.
